@@ -19,7 +19,7 @@ class Store():
     def update_price(self, item_name, new_price):
         if item_name in self.items:
             self.items[item_name] = new_price
-            print(f"Цена товара {item_name} была изменена на {new_price}")
+            print(f"Цена товара {item_name} в магазине {self.name} была изменена на {new_price}")
         else:
             print(f"Товар {item_name} не найден")
 
